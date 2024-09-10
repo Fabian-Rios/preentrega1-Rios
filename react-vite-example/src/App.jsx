@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
-import './App.css';
+import './App.scss';
+import BaseLayout from './layout/BaseLayout';
 
 export default function App() {
 
@@ -7,4 +8,15 @@ export default function App() {
     <Navbar />
   )
 }
+
+function App () {
+  return (
+    <>
+    <BaseLayout />
+    </>
+  )
+}
+
+export default App
+
 

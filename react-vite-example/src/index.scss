@@ -1,0 +1,13 @@
+/* global styles*/
+
+@import './styles/_reset.scss';
+@import './styles/_shared.scss';
+@import './styles/_variables.scss';
+@import './styles/_mixins.scss';
+
+/* Components */
+
+@import './components/Navbar/index.css';
+@import './components/CartWidget/index.css';
+@import './components/Pill/index.css';
+

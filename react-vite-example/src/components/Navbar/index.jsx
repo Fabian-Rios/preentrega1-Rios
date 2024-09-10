@@ -1,4 +1,5 @@
-import CartWidget from './CartWidget/index';
+import CartWidget from '../CartWidget';
+import ItemList from '../ItemList';
 
 const Navbar = () => {
 
@@ -9,14 +10,11 @@ const Navbar = () => {
         <img src="" alt="" />
         </figure>
         <menu className='navbar__menu'>
-        <li className='navbar__item'>
-            <a href="" className="navbar__link">Inicio</a></li>
-        <li className='navbar__item'>
-            <a href="" className="navbar__link">Contactos</a></li>
-        <li className='navbar__item'>
-            <a href="" className="navbar__link">Login</a></li>
+            <ItemList label='Inicio' />
+            <ItemList label='Contactos' />
+            <ItemList label='Login' />
         <li >
-            <a href="" className="navbar__links"><CartWidget /></a></li>
+            <a href="" className="navbar__links"><CartWidget quantity={0}/></a></li>
         </menu>
     </nav>
     </header>
