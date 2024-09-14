@@ -1,9 +1,16 @@
+import { useState, useEffect } from "react";
+import Item from "../Item";
 
-const ItemList = ({ label }) => {
+const ItemList = () => {
+    let [ Items, setItems ] = useState([]);
+    useEffect (() => {
+    fetch('/')
+    },[]);
 
-return (
-    <li className='navbar__item'>
-        <a href="" className="navbar__link">{ label }</a></li>
+    return (
+    <>
+    
+    </>
 );
 }
 
