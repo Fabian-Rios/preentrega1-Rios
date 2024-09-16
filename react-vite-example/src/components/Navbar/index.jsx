@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom';
 import CartWidget from '../CartWidget';
-import ItemList from '../ItemList';
 
 const Navbar = () => {
 
@@ -10,11 +10,11 @@ const Navbar = () => {
         <img src="" alt="" />
         </figure>
         <menu className='navbar__menu'>
-            <ItemList label='Inicio' />
-            <ItemList label='Contactos' />
-            <ItemList label='Login' />
+        <Link to={'/'}>Home</Link>
+        <Link to={'store'}>Store</Link>
+        <Link to={'contactos'}>Contactos</Link>
         <li >
-            <a href="" className="navbar__links"><CartWidget quantity={0}/></a></li>
+            <a href="" className="navbar__link"><CartWidget quantity={0}/></a></li>
         </menu>
     </nav>
     </header>

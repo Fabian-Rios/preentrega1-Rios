@@ -1,14 +1,14 @@
-const BaseLayout = () => {
+import Navbar from '../components/Navbar'
+
+const BaseLayout = ({ children }) => {
     return (
-    <>
-    <header>
-
-    </header>
+    <> 
+    <Navbar />
     <main>
-
+        { children }
     </main>
     <footer>
-    
+        
     </footer>
     </>
 );

@@ -1,11 +1,11 @@
 import { Icon } from '@iconify/react'
 import Pill from '../Pill'
 
-const CartWidget = () => {
+const CartWidget = ({ quantity }) => {
 
     return (
         <div className='cart-widget'>
-            <Pill quantity={0} />
+            <Pill quantity={ quantity } />
             <Icon className='cart-widget__cart' icon="bytesize:cart" />
         </div>
     );

@@ -1,5 +1,5 @@
 import PropTypes from 'Prop-Types'
 
-const Pill = ({ quantity }) => <span className='Pill'>{ quantity }</span>;
+const Pill = ({ quantity }) => <span className='pill'>{ quantity }</span>;
 
 export default Pill
