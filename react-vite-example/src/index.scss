@@ -2,13 +2,13 @@
 
 @import './styles/_reset.scss';
 @import './styles/_shared.scss';
-@import './styles/_variables.scss';
-@import './styles/_mixins.scss';
+
 
 /* Components */
 
-@import './components/Navbar/index.css';
+@import './components/Navbar/index.scss';
 @import './components/CartWidget/index.css';
 @import './components/Pill/index.css';
 @import './components/LinkButton/index.scss';
-
+@import './components/Footer/index.scss';
+@import './components/Card/index.scss';

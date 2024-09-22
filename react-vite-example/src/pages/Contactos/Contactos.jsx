@@ -1,9 +1,9 @@
-const Contactos = () => {
+const Contacto = () => {
     return (
         <>
-        <h2>Contactos</h2>
+        <h2>Contacto</h2>
         </>
     );
 };
 
-export default Contactos;
+export default Contacto;

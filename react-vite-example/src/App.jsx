@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Store from './pages/Store';
 import Contactos from './pages/Contactos';
 import Product from './pages/Product';
-
+import card from './components/Card';
 
 
 function App() {

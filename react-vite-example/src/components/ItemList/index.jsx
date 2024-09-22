@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Item from "../Item";
+import card from '../Card'
 
 const itemsMock = [
     { id:1, name:'producto1'},

@@ -1,15 +1,15 @@
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import Card from '../components/Card';
 
 const BaseLayout = ({ children }) => {
     return (
-    <> 
-    <Navbar />
+    <>
+    <Navbar/>
     <main>
         { children }
     </main>
-    <footer>
-        
-    </footer>
+    <Footer/>
     </>
 );
 };
