@@ -1,15 +1,8 @@
-import { useState, useEffect } from "react";
-import Item from "../Item";
-import card from '../Card'
+import { useEffect } from "react";
+import Card from '../Card'
 
-const itemsMock = [
-    { id:1, name:'producto1'},
-    { id:2, name:'producto2'},
-    { id:3, name:'producto3'}
 
-]
-const ItemList = () => {
-    let [items, setItems] = useState(itemsMock);
+const ItemList = ({items}) => {
     useEffect(() => {
         fetch('/')
     }, []);
@@ -17,7 +10,7 @@ const ItemList = () => {
     return (
         <>
         {items.map(item => {
-            return <Item key={item.id} id={item.id} name={item.name}/>
+            return <Card key={item.id} img={item.img} description={item.description} name={item.name}/>
         })}
         </>
     );
